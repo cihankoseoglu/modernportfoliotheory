@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Chapter 8: Modern Portfolio Theory</title>
+
+		<meta name="description" content="A presentation on chapter 8 of Random Walk on Wall Street">
+		<meta name="author" content="Cihan Koseoglu">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>Modern Portfolio Theory</h3>
+					<p>A Random Walk Down Wall Street</p>
+					<img src="photos/bookcover.jpg">
+					<p>
+						<small> <a href="http://cihankoseoglu.com">Cihan Koseoglu</a> / <a href="http://twitter.com/cihankoseoglu">@cihankoseoglu</a></small>
+					</p>
+				</section>
+
+				<section>
+
+				<h2>Outline</h2>
+				<ul>
+					<a href="#previous"><li>Previous Investment approachs</li></a>
+					<a href="#risk"><li>Risk</li></a>
+					<a href="#modern"><li>Modern Portfolio Theory</li></a>
+					<a href="#practice"><li>Diversification in practice</li></a>
+				</ul>
+					
+				</section>
+
+				<section id="previous">
+				<h3>So Far</h3>
+					<small class="fragment">we have seen many theories</small>
+					<p class="fragment">Firm foundation</p>
+					<p class="fragment">Castle in the air</p>
+				</section>
+
+				<section>
+					<h3>created and used by professionals</h3>
+
+				</section>
+
+				<section>
+					<p>Academics have earned reputations by attacking these theories</p>
+					<p class="fragment">Cannot be relied on to yield extraordinary profits</p>
+
+				</section>
+
+				<section>
+					<h2>a new strategy was needed</h2>
+				</section>
+
+				<section>
+					
+					<p>Academic community went busy with creating their own stock market valuation theories</p>
+					<p class="fragment">"New investment technology"</p>
+				</section>
+
+				<section>
+					<h2>introducing</h2>
+				</section>
+
+				<section>
+					<h3>Modern portfolio theory</h3>
+					<p class="fragment">Very basic</p>
+					<p class="fragment">Widely followed on Wall Street</p>
+				</section>
+
+
+				<section id="risk">
+					<h3>The role of risk</h3>
+
+					<section>
+					<p><a href="https://en.wikipedia.org/wiki/Efficient-market_hypothesis">Efficient-market hypothesis</a> explains why random walk is possible</p>
+					<p class="fragment">Stock market is incredible in adjusting to new information - no one can predict its <em>exact</em> future course </p>
+					<p class="fragment">Your guess is as good as an ape, a stockbroker, or even Carl Icahn</p></section>
+
+					<section>
+					<p>Academics says the way to beat the market is not to exercise superior clairvoyance</p>
+					<p class="fragment">but to assume greater risk, because risk alone determines the degree of returns.</p>
+					
+					</section>
+
+					
+				</section>
+
+				<section>
+					<h3>What is risk?</h3>
+
+					<section>
+						<p>"The possibility of suffering harm or loss"</p>
+						<p class="fragment">One-year Treasury bills, yields 2 percent and hold them until they mature</p>
+						<p class="fragment">Common stock in my local electric utility for one year, anticipating a 5 percent dividend.</p>
+					</section>
+
+					<section>
+						<p>Investment risk: The chance that expected security returns will not materialize, and in particular, will fall in price.</p>
+					</section>
+
+					<section>
+						<p>Financial risk has generally been defined as the variance or standard deviation of returns</p>
+						<p class="fragment">A security, whose returns are not likely to depart much from its expected return has little risk.</p>
+						<p class="fragment">A security, whose returns from year to year are quite volatile, has higher risk.</p>
+					</section>
+
+
+
+				</section>
+
+
+				<section>
+<br>
+									<img src="photos/stock1.png">
+
+<section>
+	<br><br><br><br><br>
+					<p>Suppose you buy a stock from which you expect these hypothetical returns</p>
+
+</section>
+
+<section>
+	<br><br><br><br><br>
+	<p>A third of the past years went with normal economic conditions, a third of them with rapid growth and a third of them with recession.</p>
+</section>
+
+<section>
+	<br><br><br><br><br>
+
+	<blockquote>“Expected return = 1/3(0.30) + 1/3(0.10) + 1/3(–0.10) = 0.10.”
+</blockquote>
+
+</section>
+
+<section>
+	<br><br><br><br>
+	<p>Yearly returns will be quite variable, from 30% to -10% , so we need to calculate how much it varies.</p>
+</section>
+
+<section>
+	<br>
+	<br><br><br><br>
+	
+	<img src="photos/stock2.png">
+	<small>std.dev: 0.1634</small>
+</section>
+
+
+<section>
+	<br><br><br><br>
+	<blockquote>The greater the variance, the greater the possibilities for disappointment.</blockquote>
+</section>
+	
+					
+				</section>
+
+				<section>
+				<img src="photos/stock3.png" style="width:600px;">
+				</section>
+
+				<section>
+					<p>Symmetric distribution</p>
+					<p class="fragment">2/3 of monthly returns fall within 1 stddev.</p>
+					<p class="fragment">95% of monthly returns fall within 2 stddev.</p>
+				</section>
+
+				<section>
+					<p>Mean is about 2.5%</p>
+					<p class="fragment">Std.Dev: 4.5%</p>
+					<p class="fragment">-2% to 7%, 1 stddev</p>
+					<p class="fragment">-6.5% to 11.5%, 2 stddev</p>
+
+				</section>
+
+				<section>
+					<p>Higher standard deviation</p>
+					<p class="fragment">Higher the risk</p>
+					<p class="fragment">Higher the returns</p>
+					<small class="fragment">or maybe not.</small>
+
+
+				</section>
+
+				<section>
+					<h2>How do we reduce this risk factor?</h2>
+				</section>
+
+				<section id="modern">
+					<h2>Remember Modern Portfolio Theory?</h2>
+				</section>
+
+				<section>
+					<p>All investors are risk-averse.</p>
+					<p class="fragment">High returns</p>
+					<p class="fragment">Guaranteed outcomes.</p>
+				</section>
+
+				<section>
+					<p>The theory tells investors how to combine stocks in their portfolios to give them the least risk possible, consistent with the return they seek.</p>
+				</section>
+
+				<section data-background="photos/harrymarkowitz.png">
+					
+				</section>
+
+				<section>
+					<p>Conjured in 1950s by Harry Markowitz</p>
+					<p class="fragment">The math behind is complex.</p>
+					<p class="fragment">Risky portfolios can be put together in such a way that the portfolio as a whole could be less risky than the individual stocks in it.</p>
+
+				</section>
+
+				<section>
+					<p>Suppose an island economy with only two businesses.</p>
+					<p class="fragment">Large resort with beaches, tennis courts and a golf course.</p>
+					<p class="fragment">Umbrella manufacturer</p>
+					<p class="fragment">Weather affects them both.</p>
+				</section>
+
+				<section>
+
+				<section>
+					
+				<h3>Hypothetical returns</h3>	
+				</section>
+
+				<section>
+					<p>Suppose that on average, one-half of the seasons are sunny and the other is rainy.</p>
+
+				</section>
+				<section>
+					<p>An investor(with 2$) who bought stock in the umbrella manufacturer earns 50% half of the time, loses 25% half of the time.</p>
+				</section>
+
+				<section>
+					<p>Earns 12.5% on average.</p>
+				</section>
+
+				<section>
+					<p>Now suppose instead of buying only one security, he diversifies and puts half of his money(1$) in the umbrella manufacturer and half of his money(1$) on the resort.</p>
+				</section>
+				
+
+				<section>
+					<p>In sunny seasons, one dollar investment returns 50 cents from the resort and loses 25 cents from the umbrella business.</p>
+
+				</section>
+
+				<section>
+					<p>In rainy seasons, the opposite happens, and you get 12.5% on average.</p>
+				</section>
+				<br>
+					<table>
+						<thead>
+							<tr><td></td>
+							<td>Umbrella Manufacturer</td>
+							<td>Resort Owner</td></tr>
+							<tr>
+								<td>Rainy Season</td>
+								<td>50%</td>
+								<td>-25%</td>
+							</tr>
+							<tr>
+								<td>Sunny Season</td>
+								<td>-25%</td>
+								<td>50%</td>
+							</tr>
+						</thead>
+					</table>
+				</section>
+
+				<section>
+					<h3>So what has changed?</h3>
+				</section>
+
+				<section>
+					<p>We eliminated the risk of weather</p>
+					<p class="fragment">Our expected returns are hypothesized with the premise of exactly 6 months of sun and 6 months of rain.</p>
+					<p class="fragment">The reality would be quite different.</p>
+				</section>
+
+				<section>
+					<p>Negative covariance</p>
+					<p class="fragment">As long as there is some lack of paralellism in individual companies, we can reduce risk with diversification</p>
+					<p class="fragment">With perfect negative relationship (one company does perfect when the other does very bad) diversification can totally eliminate risk.</p>
+				</section>
+
+				<section>
+					<p>Of course it's not this easy.</p>
+					<p class="fragment">There may be a recession and people may not buy vacations or umbrellas.</p>
+					<p class="fragment">Perfect negative relationship is almost nonexistent.</p>
+
+				</section>
+
+				<section>
+					<h2>The lesson to learn</h2>
+				</section>
+
+				<section>
+					<p>If you buy Ford Motor Co. and its major supplier of tires in a stock portfolio, this diversification may not help you that much.</p>
+					<p class="fragment">If Ford's sales go bad, Ford won't buy that many tires, so the supplier goes bad.</p>
+					<p class="fragment">High covariance/High correlation</p>
+				</section>
+				<section>
+					<p>If you buy Ford Motor Co. and a government contractor in a depressed area, diversification may help.</p>
+					<p class="fragment">If consumer spending is down, Ford's sales will be down and unemployment will be up.</p>
+					<p class="fragment">Government tend to give out contracts to depressed areas in times of high unemployment</p>
+				</section>
+
+				<section>
+					<img src="photos/correlation.png">
+				</section>
+
+				<section id="practice">
+					<h3>Diversification in practice</h3>
+				</section>
+
+				<section>
+					<blockquote>Can there be too much of a good thing? - William Shakespeare</blockquote>
+
+					<p class="fragment">Is this really really magical?</p>
+					<p class="fragment">Nope.</p>
+				</section>
+
+				<section>
+					<img src="photos/stock4.png" style="width:600px;">
+				</section>
+
+				<section>
+					<p>Buying only US stocks reduces the risk 60%</p>
+					<p class="fragment">Buying international stock reduces it even more (because of more diverse portfolios)</p>
+					<p class="fragment">However after a certain point, it converges into a single risk value.</p>
+				</section>
+
+				<section>
+					<p>You have to recognize that the world has changed considerably since Markowitz first put his theory in writing.</p>
+					<p class="fragment">Not every economy reacts the same way.</p>
+				</section>
+				<section>
+					<p>Oil price increase</p>
+					<p class="fragment">Bad for Europe, Japan, even US</p>
+					<p class="fragment">Not really bad for the Middle East</p>
+					<p  class="fragment">S&P 500 Index and Morgan Stanley EAFE(Europe, Australasia and Far East) Index of developed foreign countries</p>
+				</section>
+
+				<section>
+					<img src="photos/stock5.png" style="width:600px;">
+				</section>
+
+				<section>
+					<p>Overall portfolio risk is reduced by the addition of a small amount of riskier foreign securities.</p>
+					<p class="fragment">Good returns from Japanese automakers balance the poor returns of US automakers</p>
+					<p class="fragment">Dollar balances out the European recession.</p>
+				</section>
+
+				<section>
+					<p>Globalization increases the correlation coefficiency</p>
+					<img src="photos/correlation.png" style="width:700px">
+					<p>Diversification tends to have less effect in general.</p>
+
+				</section>
+
+				<section>	
+							<img src="photos/correlation2.png" style="width:700px">
+				</section>
+
+				<section>
+					<h3>But, do not despair.</h3>
+				</section>
+
+				<section>
+					<p>Diversification helped balance out the investments in '<a href="https://en.wikipedia.org/wiki/2000s_in_economics">the lost decade</a>'</p>
+
+					<img src="photos/stock6.png" style="width:500px">
+				</section>
+
+				<section>
+					
+					<h3>Summary</h3>
+
+				</section>
+
+				<section>
+				<img src="photos/breakingbad.gif">
+					<p>Thank you for sticking with me the whole time. </p>
+					<p class="fragment">In portfolio investing, invest diversely between companies with low correlation.</p>
+					<p class="fragment">Diversification in investing tends to reduce risks related to your investment.</p>
+				</section>
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
